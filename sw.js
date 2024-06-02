@@ -7,7 +7,6 @@ self.addEventListener("install", function (event) {
       return cache.addAll([
         "/index.html",
         "/assets/css/risen.css",
-        "/assets/fontawesome/js/all.js",
         "/js/fontawesome.js",
         "/assets/fontawesome/css/all.css",
         "/assets/fontawesome/js/all.js",
