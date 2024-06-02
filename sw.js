@@ -4,7 +4,7 @@ self.addEventListener("install", function (event) {
   event.waitUntil(
     caches.open("sw-cache").then(function (cache) {
       // Static files that make up the application shell are stored in cache
-      return cache.add([
+      return cache.addAll([
         "/index.html",
         "/assets/css/risen.css",
         "/assets/fontawesome/js/all.js",
