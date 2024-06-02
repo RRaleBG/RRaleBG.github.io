@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
+
     <!-- Meta -->
     <meta name="google-site-verification" content="google67e1fbaf762040e4">
     <meta charset="utf-8">
     <meta http-equiv="X-UA" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rajcic Rados RRaleBg.github portfolio">
-    <meta name="author" content="Rajcic Rados">
-    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="rgb(25, 32, 46)">
+    <link rel="manifest" href="site.webmanifest.json">
     <title>Rajcic Rados</title>
     <meta property="og:description" content="Developer">
     <meta property="og:type" content="website" />
@@ -37,6 +38,12 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
+        <script>
+        // if browser support service worker
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
 </head>
 
 <body>
@@ -184,9 +191,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+
+<!-- Add to Home Screen
 <script>
 
 const btnAdd = document.querySelector('.btnAdd');
+
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -222,5 +232,5 @@ btnAdd.addEventListener('click', (e) => {
     });
 });
 </script>
-
+ -->
 </body>
