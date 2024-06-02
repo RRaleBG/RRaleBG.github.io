@@ -14426,3 +14426,9 @@ a.btn svg {
         max-width: 980px
     }
 }
+
+@media all and (display-mode: standalone) {
+  body {
+    background-color: yellow;
+  }
+}
