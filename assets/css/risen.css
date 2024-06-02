@@ -14429,6 +14429,6 @@ a.btn svg {
 
 @media all and (display-mode: standalone) {
   body {
-    background-color: yellow;
+    background-color: rgb(25, 32, 46);
   }
 }
