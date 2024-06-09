@@ -39,9 +39,9 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
-        <script>
+    <script>
         // if browser support service worker
-        if('serviceWorker' in navigator) {
+        if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js');
         };
     </script>
@@ -49,56 +49,56 @@
 
 <body>
     <div class="container-fluid">
-        <div class="main-content-wrapper ">
-            <!-- social-list -->
-            <div class="text-center me-5">
-                <ul class="social-list mt-3">
-                    <li class="list-inline-item"><a href="https://github.com/RRaleBG">
-                            <i title="GitHub" class="fa-brands fa-github fa-fw"></i></a></li>
-                    <li class="list-inline-item">
-                        <a href="https://www.linkedin.com/in/rado%C5%A1-raj%C4%8Di%C4%87/?originalSubdomain=rs">
-                            <i title="Linkedin" class="fa-brands fa-linkedin-in fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://stackoverflow.com/users/12240308/rado%c5%a1-r">
-                            <i title="Stackoverflow" class="fa-brands fa-stack-overflow fa-fw"></i></a>
-                    </li>
 
-                    <a class="list-inline-item" href="assets/docs/CV-RajcicRados.pdf" download="CV-RajcicRados">
-                        <i title="Download CV" class="bi bi-download"></i></a>
-                </ul>
-            </div>
+        <div class="main-content-wrapper ">
+
+            <!-- social-list -->
+            <div class="top-bar text-center position-relative">
+                <div class="top-bar-inner">
+                    <ul class="social-list list-inline mx-auto">
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/RRaleBG"><i
+                                    class="fa-brands fa-github fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a
+                                href="https://www.linkedin.com/in/rado%C5%A1-raj%C4%8Di%C4%87/?originalSubdomain=rs"><i
+                                    class="fa-brands fa-linkedin-in fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a
+                                href="https://stackoverflow.com/users/12240308/rado%c5%a1-r"><i
+                                    class="fa-brands fa-stack-overflow fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                            <a class="list-inline-item" href="assets/docs/CV-RajcicRados.pdf"
+                                download="CV-RajcicRados"><i title="Download CV" class="bi bi-download"></i></a>
+                        </li>
+                    </ul><!--//social-list-->
+                </div><!--//top-bar-inner-->
+            </div><!--//top-bar-->
+
+
             <!-- Profile holder -->
             <div class="container-fluid">
-                <div class="resume-wrapper mx-auto rounded-2 shadow">
-                    <div class="resume-header px-lg-2">
+                <div class="resume-wrapper mx-auto rounded-2 shadow-lg">
+                    <div class="resume-header px-0 px-lg-5">
                         <div class="resume-profile-holder text-center">
-                            <img class="resume-profile-pic rounded-circle" src="assets/images/profile.png" alt="image">
-                            <div class="section-cta text-center mt-3">
-                            </div>
-                            <h2 class="intro-name">Rajcic Rados </h2>
-                            <div class="resume-role-title py-2">Web & Desktop App Developer</div>
-                            <a href="resume.html"
-                                class="text-white-50 btn btn-sm btn-outline-secondary mt-2 mb-3 shadow">
-                                My Resume
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                            <img class="resume-profile-pic rounded-circle " src="assets/images/profile.png" alt="image">
+
+                            <h2 class="resume-name text-uppercase mt-2">Rajcic Rados </h2>
+                            <div class="resume-role-title text-uppercase">Web & Desktop App Developer</div>
+                            <div class="resume-contact mt-4 border-bottom-0">
+                                <a class="btn btn-sm btn-outline-info me-1" href="resume.html">View Resume</a>
+
+                            </div><!--//resume-contact-->
+                        </div><!--//profile-holder-->
+                    </div><!--//resume-header-->
                 </div>
             </div>
-        </div>
 
-        <div class="container-fluid">
-            <div class="main-content-wrapper">
+
+            <div class="container-fluid">
                 <div class="resume-wrapper mx-auto py-2 py-lg-3 mt-2 rounded-2 bg-transparent">
                     <div class="row">
-                        
+
                         <!-- Auto oglas -->
                         <div class="col-6">
                             <div class="card resume-card-background border-0 shadow">
@@ -112,6 +112,10 @@
                                         <div class="card-body">
                                             <h6 class="card-title text-white mb-2">Auto oglasi</h6>
                                             <p class="p text-white-50">Asp.Net Core web applikacija </p>
+                                        </div>
+                                        <div class="card-footer border-0">
+                                            <a class="btn btn-sm btn-outline-info py-0 mt-md-4 float-end text-sm-center small"
+                                                href="https://github.com/RRaleBG/AutoOglasi">Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -132,6 +136,10 @@
                                             <h6 class="card-title text-white mb-2">Booking</h6>
                                             <p class="p text-white-50"> Java EE web applikacija</p>
                                         </div>
+                                        <div class="card-footer border-0">
+                                            <a class="btn btn-sm btn-outline-info py-0 mt-md-4 float-end"
+                                                href="https://github.com/RRaleBG/Booking">Details</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -141,14 +149,18 @@
                         <div class="col-6 mt-4">
                             <div class="card resume-card-background border-0 shadow">
                                 <div class="row g-0">
-                                    <div class="col-md-4">
+                                    <div class="col-4">
                                         <img src="assets/images/Zubarska.jpg" class="img-fluid rounded-start" alt="...">
                                     </div>
-                                    <div class="col-md-8">
+                                    <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="text-white mb-2 ">Dental-Office</h6>
                                             <p class="p text-white-50">WinForms applikacija.</p>
                                             </p>
+                                        </div>
+                                        <div class="card-footer border-0">
+                                            <a class="btn btn-sm btn-outline-info py-0 mt-md-4 float-end"
+                                                href="https://github.com/RRaleBG/Dental-Office">Details</a>
                                         </div>
                                     </div>
                                 </div>
@@ -178,9 +190,11 @@
 
                     </div>
                 </div>
-            </div>
+            </div><!--//main-content-wrapper-->
         </div>
-    </div>
+    </div><!--//container-fluid-->
+
+
 
     <footer class="footer text-center py-4">
         <!-- Start of CuterCounter Code -->
@@ -189,49 +203,8 @@
                 alt="counter for blog"></a>
         <!-- End of CuterCounter Code -->
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-
-<!-- Add to Home Screen
-<script>
-
-const btnAdd = document.querySelector('.btnAdd');
-
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-});
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  // Prevent Chrome 67 and earlier from automatically showing the prompt
-  e.preventDefault();
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-  // Update UI notify the user they can add to home screen
-  btnAdd.style.display = 'block';
-});
-
-btnAdd.addEventListener('click', (e) => {
-  // hide our user interface that shows our A2HS button
-  btnAdd.style.display = 'none';
-  // Show the prompt
-  deferredPrompt.prompt();
-  // Wait for the user to respond to the prompt
-  deferredPrompt.userChoice
-    .then((choiceResult) => {
-      if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-      deferredPrompt = null;
-    });
-});
-</script>
- -->
 </body>
