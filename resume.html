@@ -2,25 +2,20 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10778308654"></script>
+    <!-- Service Worker -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { window.dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'AW-10778308654');
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
     </script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <amp-analytics type="gtag" data-credentials="include">
-        <script
-            type="application/json"> { "vars": { "gtag_id": "AW-10778308654", "config": { "AW-10778308654": { "groups": "default" } } }, "triggers": { } } </script>
-    </amp-analytics>
+    <script src="sw.js"></script>
+    <!-- Meta Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=google67e1fbaf762040e4"></script>
     <script>
         gtag('event', 'conversion', {
-            'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
+            'send_to': 'google67e1fbaf762040e4/AbC-D_efG-h12_34-567',
             'value': 1.0,
-            'currency': 'USD'
+            'currency': 'RSD',
         });
     </script>
     <meta name="google-site-verification" content="google67e1fbaf762040e4">
@@ -59,15 +54,6 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
-    <meta name="google-site-verification" content="7M_x0NC0aV-15sT47_0d9kkkzjGle-_HF_rJX3bY1-M" />
-    <script>
-        // if browser support service worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        };
-    </script>
-    <script src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
-    <script src="sw.js"></script>
 </head>
 
 <body>
@@ -99,8 +85,6 @@
                     </ul><!--//social-list-->
                 </div><!--//top-bar-inner-->
             </div><!--//top-bar-->
-
-
 
             <!--//resume-wrapper-->
             <div class="container-fluid">
@@ -365,14 +349,12 @@
                                     </ul>
                                 </section>
 
-
                             </div><!--//col-side-->
                         </div><!--//row-->
                     </div><!--//resume-body-->
                 </div><!--//resume-wrapper-->
             </div>
         </div><!--//main-content-wrapper-->
-
     </div><!--//container-fluid-->
 
     <footer class="footer text-center py-4">

@@ -2,27 +2,24 @@
 <html lang="en">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10778308654"></script>
+    <!-- Service Worker -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { window.dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-10778308654');
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
     </script>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <meta name="google-site-verification" content="google67e1fbaf762040e4">
-    <!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include">
-        <script
-            type="application/json"> { "vars": { "gtag_id": "AW-10778308654", "config": { "AW-10778308654": { "groups": "default" } } }, "triggers": { } } </script>
-    </amp-analytics>
+    <script src="sw.js"></script>
+    <!-- Meta Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=google67e1fbaf762040e4"></script>
     <script>
         gtag('event', 'conversion', {
-            'send_to': 'AW-123456789/AbC-D_efG-h12_34-567',
+            'send_to': 'google67e1fbaf762040e4/AbC-D_efG-h12_34-567',
             'value': 1.0,
-            'currency': 'USD'
+            'currency': 'RSD',
         });
     </script>
+    <meta name="google-site-verification" content="google67e1fbaf762040e4">
+    <meta name="description" content="Rajcic Rados RRaleBg.github portfolio Developer`s personal page.">
     <meta charset="utf-8">
     <meta http-equiv="X-UA" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,10 +27,10 @@
     <meta name="theme-color" content="rgb(25, 32, 46)">
     <link rel="manifest" href="site.webmanifest.json">
     <title>Rajcic Rados</title>
-    <meta property="og:description" content="Developer">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()" />
+    <meta property="og:description" content="Rajcic Rados RRaleBg.github portfolio Developer">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://RRaleBg.github.io/assets/images/profile.png" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()" />
     <meta property="og:title" content="Rajcic Rados" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
@@ -57,14 +54,6 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
-    <meta name="google-site-verification" content="7M_x0NC0aV-15sT47_0d9kkkzjGle-_HF_rJX3bY1-M" />
-    <script>
-        // if browser support service worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js');
-        };
-    </script>
-    <script src="sw.js"></script>
 </head>
 
 <body>
@@ -77,17 +66,17 @@
                         <li class="list-inline-item me-0 me-md-1 me-lg-2">
                             <a href="https://github.com/RRaleBG"><i class="fa-brands fa-github fa-fw"></i></a>
                         </li>
-                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a
-                                href="https://www.linkedin.com/in/rado%C5%A1-raj%C4%8Di%C4%87/?originalSubdomain=rs"><i
-                                    class="fa-brands fa-linkedin-in fa-fw"></i></a>
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                            <a href="https://www.linkedin.com/in/rado%C5%A1-raj%C4%8Di%C4%87/?originalSubdomain=rs">
+                                <i class="fa-brands fa-linkedin-in fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item me-0 me-md-1 me-lg-2">
                             <a href="https://stackoverflow.com/users/12240308/rado%c5%a1-r">
                                 <i class="fa-brands fa-stack-overflow fa-fw"></i></a>
                         </li>
                         <li class="list-inline-item me-0 me-md-1 me-lg-2">
-                            <a class="list-inline-item" href="assets/docs/CV-RajcicRados.pdf"
-                                download="CV-RajcicRados"><i title="Download CV" class="bi bi-download"></i></a>
+                            <a class="list-inline-item" href="assets/docs/CV-RajcicRados.pdf" download="CV-RajcicRados">
+                                <i title="Download CV" class="bi bi-download"></i></a>
                         </li>
                     </ul><!--//social-list-->
                 </div><!--//top-bar-inner-->
@@ -99,12 +88,10 @@
                     <div class="resume-header px-0 px-lg-5">
                         <div class="resume-profile-holder text-center">
                             <img class="resume-profile-pic rounded-circle " src="assets/images/profile.png" alt="image">
-
                             <h2 class="resume-name text-uppercase mt-2">Rajcic Rados </h2>
                             <div class="resume-role-title text-uppercase">Web & Desktop App Developer</div>
                             <div class="resume-contact mt-4 border-bottom-0">
                                 <a class="btn btn-sm btn-outline-info me-1" href="resume.html">View Resume</a>
-
                             </div><!--//resume-contact-->
                         </div><!--//profile-holder-->
                     </div><!--//resume-header-->
@@ -184,7 +171,6 @@
                             </div>
                         </div>
 
-
                         <!-- Admin app -->
                         <div class="col-6 mt-4">
                             <div class="card resume-card-background border-0 shadow">
@@ -204,7 +190,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div><!--//main-content-wrapper-->
