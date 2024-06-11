@@ -10,7 +10,7 @@ self.addEventListener("install", function (event) {
         "./resume.html",
         "./assets/css/risen.css",
         "./assets/docs/CV-RajcicRados.pdf",
-        "./google67e1fbaf762040e4.html",
+        "./googlef28c01f74848617b.html",
         "./assets/images/*.png",
         "/assets/favicons/*.png",
         "./assets/fontawesome/js/*.js",
