@@ -58,6 +58,7 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
+    <script src="sw.js"></script>
 </head>
 
 <body>
@@ -72,91 +73,108 @@
             <div class="top-bar text-center position-relative">
                 <div class="top-bar-inner">
                     <ul class="social-list list-inline mx-auto">
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2 ">
+                            <a href="index.html" class="bg-transparent text-info fw-bold">
+                                <i title="Home" class="bi bi-house"></i>
+                            </a>
+                        </li>
                         <li class="list-inline-item me-0 me-md-1 me-lg-2">
-                            <a href="index.html"><i title="Home" class="bi bi-house"></i></a>
+                            <a href="https://github.com/RRaleBG" data-toggle="tooltip" title="Github"
+                                class="bg-transparent text-info fw-bold">
+                                <i class="fa-brands fa-github fa-fw"></i>
+                            </a>
                         </li>
-                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="https://github.com/RRaleBG"
-                                aria-label="Visit my GitHub profile."><i class="fa-brands fa-github fa-fw"></i></a>
-                        </li>
-                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2">
+                            <a class="bg-transparent text-info fw-bold"
                                 href="https://www.linkedin.com/in/rado%C5%A1-raj%C4%8Di%C4%87/?originalSubdomain=rs"
-                                aria-label="Visit my LinkedIn profile."><i
-                                    class="fa-brands fa-linkedin-in fa-fw"></i></a>
+                                data-toggle="tooltip" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in fa-fw"></i>
+                            </a>
                         </li>
-                        <li class="list-inline-item me-0 me-md-1 me-lg-2"><a
-                                href="https://stackoverflow.com/users/12240308/rado%c5%a1-r"
-                                aria-label="Visit my StackOverflow profile."><i
-                                    class="fa-brands fa-stack-overflow fa-fw"></i></a>
+                        <li class="list-inline-item me-0 me-md-1 me-lg-2" data-toggle="tooltip" title="StackOverflow"
+                            data-placement="bottom">
+                            <a class="list-inline-item bg-transparent text-info fw-bold"
+                                href="https://stackoverflow.com/users/12240308/rado%c5%a1-r">
+                                <i class="fa-brands fa-stack-overflow fa-fw"></i>
+                            </a>
                         </li>
                         <li class="list-inline-item me-0 me-md-1 me-lg-2">
-                            <a class="list-inline-item" href="assets/docs/CV-RajcicRados.pdf"
-                                download="CV-RajcicRados"><i title="Download CV" class="bi bi-download"></i></a>
+                            <a class="list-inline-item bg-transparent text-info fw-bold"
+                                href="assets/docs/CV-RajcicRados.pdf" data-toggle="tooltip" title="Download CV"
+                                data-placement="bottom" download="CV-RajcicRados">
+                                <i class="bi bi-download"></i></a>
                         </li>
                     </ul><!--//social-list-->
                 </div><!--//top-bar-inner-->
             </div><!--//top-bar-->
 
+
+
+
             <!--//resume-wrapper-->
             <div class="container-fluid">
                 <div class="resume-wrapper mx-auto rounded-2 shadow">
-
                     <div class="resume-header px-0 px-lg-5">
                         <div class="resume-profile-holder text-center">
-                            <img class="resume-profile-pic rounded-circle" src="assets/images/profile.png" alt="image">
+                            <img class="resume-profile-pic rounded-circle bg-transparent text-info fw-bold"
+                                src="assets/images/profile.png" alt="image">
 
-                            <h2 class="resume-name text-uppercase mt-2">Rajcic Rados </h2>
-                            <div class="resume-role-title text-uppercase">Web & Desktop App Developer</div>
-                            <div class="resume-contact mt-4">
-                                <li class="list-inline-item me-md-3 me-lg-5"><i
-                                        class="resume-contact-icon bi bi-geo-alt me-2"></i>Belgrade, Serbia</li>
-                                <li class="list-inline-item me-md-3 me-lg-5">
-                                    <i class="resume-contact-icon bi bi-envelope me-2"></i>
-
-                                    <a class="resume-timeline-item-link"
+                            <h2 class="resume-name mt-2 text-white-50">Rajcic Rados </h2>
+                            <div class="resume-role-title">Software Developer</div>
+                            <div class="resume-contact mt-4 text-center">
+                                <li class="list-inline-item me-md-3 me-lg-5 text-white-50"><i
+                                        class="resume-contact-icon bi bi-geo-alt me-2 text-white-50"></i>Belgrade,
+                                    Serbia</li>
+                                <li class="list-inline-item me-md-3 me-lg-5 ">
+                                    <i class="resume-contact-icon bi bi-envelope me-2 text-white-50"></i>
+                                    <a class="text-white-50"
                                         href="mailto:rajcicrados@hotmail.com">rajcicrados@hotmail.com</a>
                                 </li>
                             </div><!--//resume-contact-->
                         </div><!--//profile-holder-->
                     </div><!--//resume-header-->
 
+
+
                     <!--//resume-body-->
                     <div class="resume-body p-4 p-lg-5">
                         <div class="row">
                             <div class="col-main col-12 col-lg-8 pe-lg-4">
                                 <section class="resume-summary-section resume-section">
-                                    <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i
-                                            class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
+                                    <h3
+                                        class="resume-section-heading text-white-50 text-uppercase py-2 py-lg-3 py-2 py-lg-3">
+                                        <i
+                                            class="resume-section-heading-icon bi bi-person me-2 bg-transparent text-info fw-bold">
+                                        </i>About Me
+                                    </h3>
                                     <div class="resume-summary-desc p-3">
                                         <p class="">
-                                            Firstly, I will be honest and open, as I am by nature, so I
-                                            must say that I
+                                            Firstly, I will be honest and open, as I am by nature, so i
+                                            must say that i
                                             have no work experience, and you know that it is very
-                                            difficult to find a
-                                            job as a graduate, so one has to start from somewhere.
+                                            difficult to find a job as a graduate, so one has to start from somewhere.
                                         </p>
                                         <p>
-                                            I successfully completed my studies last year in Information
+                                            I successfully completed my studies at Comtrade, Belgrade for Information
                                             Technologies,
-                                            as well as the ITAcademy program on Microsoft technologies,
-                                            and this year I
-                                            intend to secure employment.
+                                            as well as the ITAcademy program on Microsoft technologies.
                                         </p>
                                         <p>
                                             I enjoy learning and have a keen interest in Information
                                             Technologies. I
                                             have successfully mastered many things. I prefer to be very
                                             precise in
-                                            everything I do and to devote myself to every detail, even
+                                            everything i do and to devote myself to every detail, even
                                             in daily life
                                             routines not related to work.
                                         </p>
                                         <p>
                                             I prefer not to discuss my work in detail. I enjoy working;
                                             it fulfills me,
-                                            and sometimes I overdo it, but I love it. I am a
+                                            and sometimes I overdo it, but i love it. I am a
                                             communicative person who
                                             values humor, friendliness, and honesty. I welcome criticism
-                                            because I
+                                            because i
                                             consider it constructive.
                                         </p>
                                         <p>
@@ -178,7 +196,8 @@
                                 <!-- EDUCATION - SECTION-->
                                 <section class="resume-educate-section resume-section">
                                     <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
-                                            class="resume-section-heading-icon bi bi-book me-2"></i>Education</h3>
+                                            class="resume-section-heading-icon bi bi-book me-2 bg-transparent"></i>Education
+                                    </h3>
                                     <ul class="list-unstyled">
                                         <li class="mb-3">
                                             <div class="resume-degree font-weight-bold">BSc in Applied Informatics</div>
@@ -204,7 +223,8 @@
                                 <!-- TECHNOLOGIES - SECTION -->
                                 <section class="resume-skills-section resume-section">
                                     <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
-                                            class="resume-section-heading-icon bi bi-gear me-2"></i>TECHNOLOGIES</h3>
+                                            class="resume-section-heading-icon bi bi-gear me-2 bg-transparent"></i>TECHNOLOGIES
+                                    </h3>
 
                                     <ul class="list-unstyled">
                                         <li class="mb-2">
@@ -256,7 +276,8 @@
                                 <!--PROJECTS - SECTION-->
                                 <section class="resume-projects-section resume-section">
                                     <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
-                                            class="resume-section-heading-icon bi bi-code-slash me-2"></i>Projects</h3>
+                                            class="resume-section-heading-icon bi bi-code-slash me-2 bg-transparent"></i>Projects
+                                    </h3>
 
                                     <!--//Booking-->
                                     <div class="item">
@@ -296,7 +317,8 @@
                                 <!-- Soft Skills - SECTION-->
                                 <section class="resume-skills-section resume-section">
                                     <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
-                                            class="resume-section-heading-icon bi bi-person-gear me-2"></i>Soft Skills
+                                            class="resume-section-heading-icon bi bi-person-gear me-2 bg-transparent"></i>Soft
+                                        Skills
                                     </h3>
                                     <ul class="list-inline">
                                         <li class="list-inline-item"><span
@@ -327,7 +349,8 @@
                                 <!-- LANGUAGEES resume-level-indicator-->
                                 <section class="resume-lang-section resume-section">
                                     <h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i
-                                            class="resume-section-heading-icon bi bi-translate me-2"></i>Languages</h3>
+                                            class="resume-section-heading-icon bi bi-translate me-2 bg-transparent"></i>Languages
+                                    </h3>
                                     <ul class="list-unstyled resume-lang-list">
                                         <li class="mb-2">
                                             <div class="resume-lang-name">English</div>
@@ -367,14 +390,9 @@
         </div><!--//main-content-wrapper-->
     </div><!--//container-fluid-->
 
-    <footer class="footer text-center py-4">
-        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-        <small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill"
-                style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com"
-                target="_blank">Xiaoying Riley</a> for developers</small>
-    </footer>
-
-
     <!-- Javascript -->
     <script src="sw.js"></script>
+
 </body>
+
+</html>

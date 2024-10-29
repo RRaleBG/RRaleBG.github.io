@@ -38,3 +38,7 @@ if ("serviceWorker" in navigator) {
     console.log("Service Worker Registered");
   });
 }
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
